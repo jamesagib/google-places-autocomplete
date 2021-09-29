@@ -22,7 +22,7 @@ class GooglePlacesAutoComplete extends Component {
 					}}
 				/>
 			</View>
-		)
+		) 
 	}
 }
 
