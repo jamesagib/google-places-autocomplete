@@ -92,6 +92,11 @@
           "displayName": "Placeholder Text",
           "type": "text",
           "default": "Search"
+        },
+        {
+          "name": "borderRadius",
+          "displayName": "Rounding",
+          "type": "number"
         }
       ]
     }
