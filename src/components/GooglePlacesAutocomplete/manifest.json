@@ -1,0 +1,99 @@
+{
+  "displayName": "Google Places Autocomplete",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "apiKey",
+      "displayName": "Google Places API Key",
+      "type": "text",
+      "global": "0"
+    },
+    {
+      "name": "language",
+      "displayName": "Language",
+      "type": "text",
+      "default": "English",
+      "control": {
+        "type": "menu",
+        "options": [
+          {
+            "label": "Arabic",
+            "value": "ar"
+          },
+          {
+            "label": "Chinese",
+            "value": "zh"
+          },
+          {
+            "label": "English",
+            "value": "en"
+          },
+          {
+            "label": "French",
+            "value": "fr"
+          },
+          {
+            "label": "German",
+            "value": "de"
+          },
+          {
+            "label": "Hindi",
+            "value": "hi"
+          },
+          {
+            "label": "Japanese",
+            "value": "ja"
+          },
+          {
+            "label": "Portuguese",
+            "value": "pt"
+          },
+          {
+            "label": "Spanish",
+            "value": "es"
+          },
+          {
+            "label": "Russian",
+            "value": "ru"
+          },
+          {
+            "label": "Polish",
+            "value": "pl"
+          }
+        ]
+      }
+    },
+    {
+      "name": "enablecurrentLocation",
+      "displayName": "Show Current Location?",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "currentlocationText",
+      "displayName": "Current Location Text",
+      "type": "text",
+      "default": "Current Location",
+      "enabled": { 
+        "enablecurrentLocation": "true"
+      }
+    }
+  ],
+  "childComponents": [
+    {
+      "name": "styles",
+      "displayName": "Styles",
+      "props": [
+        {
+          "name": "placeholderText",
+          "displayName": "Placeholder Text",
+          "type": "text",
+          "default": "Search"
+        }
+      ]
+    }
+  ]
+}
