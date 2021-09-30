@@ -5,9 +5,9 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 class GooglePlacesAutoComplete extends Component {
 	render() {
 
-		const { apiKey, language } = this.props
+		const { apiKey, language } = this.props;
 
-		const { placeholderText } = this.props.styles
+		const { placeholderText } = this.props.styles;
 
 		return (
 			<View style={styles.wrapper}>
